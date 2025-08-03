@@ -47,7 +47,7 @@
     }
   },
   "forwardPorts": [8000, 3000, 5000],
-  "postCreateCommand": "pip install --upgrade pip && pip install -r .devcontainer/requirements-dev.txt",
+  "postCreateCommand": "pip install --upgrade pip && pip install -r .devcontainer/requirements-dev.txt && npm install -g @anthropic-ai/claude-code",
   "remoteUser": "vscode",
   "workspaceFolder": "/workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
